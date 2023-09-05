@@ -116,7 +116,7 @@ Extract fonts.zip in ~/.local/share/fonts than run fc-cache -fv in terminal
 
 - [TokyoNight](https://github.com/ljmill/tokyo-night-icons)
 
-- [Cutefish](https://github.com/cutefishos/icons) or you can take from folder app support and extract to /usr/share/icons/
+- [Cutefish](https://github.com/cutefishos/icons) or you can take from folder app support and extract and move folder Crule to /usr/share/icons/
 
 **Run mpd**
 
