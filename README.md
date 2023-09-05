@@ -112,7 +112,7 @@ Extract fonts.zip in ~/.local/share/fonts than run fc-cache -fv in terminal
 
 **Themes and icons :**
 
-- [Material-GTK-Themes](https://github.com/Fausto-Korpsvart/Material-GTK-ThemMaterial-GTK-Themeses)
+- [Material-GTK-Themes](https://github.com/Fausto-Korpsvart/Material-GTK-Themes)
 
 - [TokyoNight](https://github.com/ljmill/tokyo-night-icons)
 
