@@ -11,7 +11,7 @@
 
 ## 🔥 Information
 
-![ss](https://github.com/hidayry/dotfiles-awesomewm/blob/main/ss/ShoT_2023-09-03-04-28-34_1366x768.png?raw=true)
+![ss](./ss/ShoT_2023-09-03-04-28-34_1366x768.png)
 
 |    Distro    |                            [Debian 12](https://debian.org/)                            |
 | :----------: | :------------------------------------------------------------------------------------: |
@@ -29,25 +29,25 @@
 
 ## 🖵 Screenshoot
 
-![ss](https://github.com/hidayry/dotfiles-awesomewm/blob/main/ss/ShoT_2023-09-03-04-28-55_1366x768.png?raw=true)
+![ss](./ss/ShoT_2023-09-03-04-28-55_1366x768.png)
 
-![ss](https://github.com/hidayry/dotfiles-awesomewm/blob/main/ss/ShoT_2023-09-04-11-30-17_1366x768.png?raw=true)
+![ss](./ss/ShoT_2023-09-04-11-30-17_1366x768.png)
 
-![ss](https://github.com/hidayry/dotfiles-awesomewm/blob/main/ss/ShoT_2023-09-03-04-29-31_1366x768.png?raw=true)
+![ss](./ss/ShoT_2023-09-03-04-29-31_1366x768.png)
 
-![ss](https://github.com/hidayry/dotfiles-awesomewm/blob/main/ss/ShoT_2023-09-03-04-30-03_1366x768.png?raw=true)
+![ss](./ss/ShoT_2023-09-03-04-30-03_1366x768.png)
 
-![ss](https://github.com/hidayry/dotfiles-awesomewm/blob/main/ss/ShoT_2023-09-03-04-30-36_1366x768.png?raw=true)
+![ss](./ss/ShoT_2023-09-03-04-30-36_1366x768.png)
 
-![ss](https://github.com/hidayry/dotfiles-awesomewm/blob/main/ss/ShoT_2023-09-03-04-30-59_1366x768.png?raw=true)
+![ss](./ss/ShoT_2023-09-03-04-30-59_1366x768.png)
 
 ## 🍀 Setup
 
-- <b>First clone the repository</b>
+1.- <b>First clone the repository</b>
 
-<b>Copy config :</b>
+2.- <b>Copy config :</b>
 
-- ** ⚠️ WARNING: Configuration files may be overrided,please backup your config**
+- **⚠️ WARNING: Configuration files may be overrided,please backup your config**
 
 ```sh
 cd dotfiles-awesomewm
@@ -55,6 +55,8 @@ cp -r config/* ~/.config/
 cp -r local/* ~/.local/
 cp -r home/* ~/
 ```
+
+3.- <b>Install Dependencies</b>
 
 - **Read Notice**
 
@@ -66,7 +68,7 @@ Dependencies :
 awesome build-essential cmake make gcc lua5.2 liblua5.3-dev lua-busted lua-discount lua-ldoc lua-lgi lua5.3 asciidoctor debhelper-compat imagemagick libcairo2-dev libdbus-1-dev libgdk-pixbuf2.0-dev libglib2.0-dev libpango1.0-dev libstartup-notification0-dev libx11-xcb-dev libxcb-cursor-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-randr0-dev libxcb-shape0-dev libxcb-util0-dev libxcb-xinerama0-dev libxcb-xkb-dev libxcb-xrm-dev libxcb-xtest0-dev libxdg-basedir-dev libxkbcommon-dev libxkbcommon-x11-dev x11proto-core-dev build-essential dbus-x11 gir1.2-gtk-3.0 libxcb-icccm4-dev libxcb-util0-dev libxcb1-dev x11-apps x11-utils x11-xserver-utils xfonts-base xterm xvfb libxcb-xfixes0-dev
 ```
 
-You can install awesome.git from folder app support, it`s my build
+- **After install dependencies, install awesome.git from folder app support, it`s my build**
 
 ```sh
 cd app\ support/
@@ -75,63 +77,52 @@ sudo cp awesome.desktop /usr/share/xsessions/
 sudo chmod +x /usr/share/xsessions/awesome.desktop
 ```
 
-or build from [awesome.git](https://github.com/awesomeWM/awesome)
+- **or build from [awesome.git](https://github.com/awesomeWM/awesome)**
 
-I`m use this :
+**I`m use this for build:**
 
 ```sh
 CMAKE_ARGS="-DLUA_EXECUTABLE=/usr/bin/lua5.3 -DLUA_LIBRARY=/usr/lib/x86_64-linux-gnu/liblua5.3.so -DLUA_INCLUDE_DIR=/usr/include/lua5.3" make
 ```
 
-- **For Neovim**
-
-Because Neovim in Debian 12 to old, you can extract from folder app support or build from [Neovim](https://github.com/neovim/neovim)
-
-- **For Fonts**
-
-Extract fonts.zip in ~/.local/share/fonts than run fc-cache -fv in terminal
-
-This dependecies only works for **Debian 12**, and based distro, for other distro you can search same packages
+5.- **Other dependecies only works for **Debian 12**, and based distro, for other distro you can search same packages**
 
 ```sh
 alacritty brightnessctl dunst rofi jq policykit-1-gnome playerctl mpd ncmpcpp geany mpc picom xdotool feh ueberzug maim pamixer libwebp-dev xdg-user-dirs webp-pixbuf-loader zsh zsh-autosuggestions zsh-syntax-highlighting thunar thunar-volman thunar-archive-plugin gvfs gvfs-backends engrampa dmenu xdo redshift xautolock fzf ytfzf yt-dlp gawk tumbler gpick neofetch xdg-utils python-is-python3 python3-gi gir1.2-nm-1.0 duf libglib2.0-bin btop ncdu bat exa wmctrl acpid xclip scrot acpi playerctl redshift mpdris2 libplayerctl-dev gir1.2-playerctl-2.0 mpv lxapperience bc
 ```
 
-- **Run MPD**
+***
+
+- **For Neovim**
+
+Because Neovim in Debian 12 to old, you can install neovim from folder app support or build from [Neovim](https://github.com/neovim/neovim)
+
+- **For Fonts**
+
+Extract fonts.zip in ~/.local/share/fonts than run fc-cache -fv in terminal
+
+****
+**For Debian/Ubuntu you can build for this :**
+
+- [I3lock-Color](https://github.com/Raymo111/i3lock-color)
+
+- [Rofi-Greenclip](https://github.com/erebe/greenclip)
+
+- [Networkmanager_dmenu](https://github.com/firecat53/networkmanager-dmenu)
+
+**Themes and icons :**
+
+- [Material-GTK-Themes](https://github.com/Fausto-Korpsvart/Material-GTK-ThemMaterial-GTK-Themeses)
+
+- [TokyoNight](https://github.com/ljmill/tokyo-night-icons)
+
+- [Cutefish](https://github.com/cutefishos/icons)
+
+**Run mpd**
 
 ```sh
 systemctl --user enable mpd
 ```
-
-<b>For other you can build from sources :</b>
-
-- **I3lock-Color**
-
-```sh
-https://github.com/Raymo111/i3lock-color
-```
-
-- **Rofi-greenclip**
-
-```sh
-https://github.com/erebe/greenclip
-```
-
-- **Networkmanager_dmenu**
-
-```sh
-https://github.com/firecat53/networkmanager-dmenu
-```
-
-<b>For icons :</b>
-
-- **TokyoNight**
-
-```sh
-https://github.com/ljmill/tokyo-night-icons
-```
-
-or you can see app support
 
 <table align="center">
    <tr>
@@ -141,7 +132,7 @@ or you can see app support
    <tr>
       <td align="center">
 
-    **💻 Dotfiles Configured at 1360x768 with 96 DPI on 1 monitor**
+    💻 Dotfiles Configured at 1360x768 with 96 DPI on 1 monitor
 
    </tr>
    </table>
