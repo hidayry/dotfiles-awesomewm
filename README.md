@@ -101,7 +101,7 @@ Because Neovim in Debian 12 to old, you can install neovim from folder app suppo
 
 Extract fonts.zip in ~/.local/share/fonts than run fc-cache -fv in terminal
 
-****
+***
 **For Debian/Ubuntu you can build for this :**
 
 - [I3lock-Color](https://github.com/Raymo111/i3lock-color)
@@ -116,7 +116,7 @@ Extract fonts.zip in ~/.local/share/fonts than run fc-cache -fv in terminal
 
 - [TokyoNight](https://github.com/ljmill/tokyo-night-icons)
 
-- [Cutefish](https://github.com/cutefishos/icons)
+- [Cutefish](https://github.com/cutefishos/icons) or you can take from folder app support and extract to /usr/share/icons/
 
 **Run mpd**
 
