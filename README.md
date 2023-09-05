@@ -27,7 +27,7 @@
 
 <br>
 
-## 🖵 Screenshoot
+## 🖼️ Screenshoot
 
 ![ss](./ss/ShoT_2023-09-03-04-28-55_1366x768.png)
 
