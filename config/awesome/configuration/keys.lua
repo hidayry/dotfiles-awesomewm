@@ -191,6 +191,7 @@ awful.keyboard.append_global_keybindings({
 	end, { description = "open color picker", group = "hotkeys" }),
 
 
+	--- Screenshots
 awful.key({ mod }, "Print", function() take_screenshot_with_timer(5) end,
           {description = "Take screenshot with timer", group = "Screenshots"}),
 awful.key({}, "Print", function() take_fullscreen_screenshot() end,
@@ -199,7 +200,6 @@ awful.key({ alt }, "Print", function() take_selected_area_screenshot() end,
           {description = "Take selected area screenshot", group = "Screenshots"}),
 
 
-	--- Screenshots
 --	awful.key({}, "Print", function()
 --		awful.spawn.easy_async_with_shell(apps.utils.full_screenshot, function() end)
 --	end, { description = "take a full screenshot", group = "hotkeys" }),

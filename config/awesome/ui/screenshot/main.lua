@@ -297,15 +297,8 @@ end)
 --Screenshot Functionalities-----------------
 ---------------------------------------------
 
-local ss_index = tonumber(io.popen("cat ~/.config/awesome/ss_index.txt"):read("*all"))
-
 local open_pictures = naughty.action {
   name = 'Open Pictures',
-  icon_only = false,
-}
-
-local delete_ss = naughty.action {
-  name = 'Delete',
   icon_only = false,
 }
 
@@ -316,49 +309,21 @@ open_pictures:connect_signal(
   end
 )
 
-delete_ss:connect_signal(
-  'invoked',
-  function()
-    awful.spawn.with_shell('rm ' .. 'Pictures/' .. ss_index .. '.png', false)
-  end
-)
-
---Fullscreen immediate screenshot
--- fullscreen:connect_signal("button::release", function(_, _, _, button)
---   if button == 1 then
---     ss_tool.visible = false
---     os.execute('sleep 0.3 && scrot ~/Pictures/' .. ss_index .. '.png')
---     naughty.notify
---     (
---       {
---         title = "Screenshot Tool",
---         text = "Screen Captured!",
---         timeout = 5,
---         icon = os.getenv("HOME") .. "/Pictures/" .. ss_index .. ".png"
---       }
---     )
---     ss_index = ss_index + 1
---   end
--- end)
---
 fullscreen:connect_signal("button::release", function(_, _, _, button)
   if button == 1 then
     ss_tool.visible = false
-    awful.spawn.easy_async_with_shell('sleep 0.3 && scrot ~/Pictures/' .. ss_index .. '.png',
+    awful.spawn.easy_async_with_shell("sleep 0.3 && scrot ~/Pictures/screenshot.png",
       function()
         naughty.notify
         (
           {
-            text = "Screen Captured!",
+            text = "Fullscreen Screenshot Captured!",
             title = "   Screenshot Tool",
             font = beautiful.jet .. "14",
             timeout = 5,
-            icon = os.getenv("HOME") .. "/Pictures/" .. ss_index .. ".png",
-            actions = { open_pictures, delete_ss }
+            actions = { open_pictures }
           }
         )
-        ss_index = ss_index + 1
-        awful.spawn.with_shell('echo ' .. ss_index + 1 .. ' > ~/.config/awesome/ss_index.txt')
       end)
   end
 end)
@@ -366,21 +331,18 @@ end)
 timer_button:connect_signal("button::release", function(_, _, _, button)
   if button == 1 then
     ss_tool.visible = false
-    awful.spawn.easy_async_with_shell('sleep 0.3 && scrot -d ' .. delay_time .. ' ~/Pictures/' .. ss_index .. '.png',
+    awful.spawn.easy_async_with_shell("sleep " .. delay_time .. " && scrot -u ~/Pictures/screenshot.png",
       function()
         naughty.notify
         (
           {
-            text = "Screen Captured!",
+            text = "Screenshot Captured!",
             title = "   Screenshot Tool",
             font = beautiful.jet .. "14",
             timeout = 5,
-            icon = os.getenv("HOME") .. "/Pictures/" .. ss_index .. ".png",
-            actions = { open_pictures, delete_ss }
+            actions = { open_pictures }
           }
         )
-        ss_index = ss_index + 1
-        awful.spawn.with_shell('echo ' .. ss_index + 1 .. ' > ~/.config/awesome/ss_index.txt')
       end)
   end
 end)
@@ -388,21 +350,17 @@ end)
 selection:connect_signal("button::release", function(_, _, _, button)
   if button == 1 then
     ss_tool.visible = false
-    awful.spawn.easy_async_with_shell('sleep 0.3 && scrot -s ' .. '~/Pictures/' .. ss_index .. '.png',
-      function()
+    awful.spawn.easy_async_with_shell("sleep 0.3 && scrot -s ~/Pictures/screenshot.png", function()
         naughty.notify
         (
           {
-            text = "Screen Captured!",
+            text = "Selected Screenshot Captured!",
             title = "   Screenshot Tool",
             font = beautiful.jet .. "14",
             timeout = 5,
-            icon = os.getenv("HOME") .. "/Pictures/" .. ss_index .. ".png",
-            actions = { open_pictures, delete_ss }
+            actions = { open_pictures }
           }
         )
-        ss_index = ss_index + 1
-        awful.spawn.with_shell('echo ' .. ss_index + 1 .. ' > ~/.config/awesome/ss_index.txt')
       end)
   end
 end)
