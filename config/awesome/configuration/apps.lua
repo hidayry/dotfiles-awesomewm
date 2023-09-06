@@ -1,3 +1,4 @@
+local awful = require("awful")
 local filesystem = require("gears.filesystem")
 local config_dir = filesystem.get_configuration_dir()
 local utils_dir = config_dir .. "utilities/"
@@ -27,18 +28,20 @@ return {
         recorder = "SimpleScreenRecorder",
         --- Default rofi global menu
         app_launcher = "rofi -no-lazy-grab -show drun -modi drun -theme " ..
-            config_dir .. "configuration/rofi.rasi"
+            config_dir .. "configuration/rofi.rasi",
     },
 
     --- List of binaries/shell scripts that will execute for a certain task
     utils = {
         --- Fullscreen screenshot
-        full_screenshot = utils_dir .. "screensht full",
+        full_screenshot = utils_dir .. "ss.sh -f",
         --- Area screenshot
-        area_screenshot = utils_dir .. "screensht area",
-        --- 10 detik
-        time_screenshot = "ScreenShoTer --in10",
+        area_screenshot = utils_dir .. "ss.sh -s",
+        ---10 second
+        time_screenshot = utils_dir .. "ss.sh -t 10",
         --- Color Picker
-        color_picker = utils_dir .. "xx"
+        color_picker = utils_dir .. "colorpicker"
     }
 }
+
+
