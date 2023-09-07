@@ -15,7 +15,7 @@ return {
         --- Default code editor
         code_editor = "code",
         --- Default web browser
-        web_browser = "brave-browser",
+        web_browser = "microsoft-edge-stable",
         --- Default file manager
         file_manager = "thunar",
         --- Default network manager

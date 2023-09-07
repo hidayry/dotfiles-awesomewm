@@ -333,7 +333,7 @@ theme.notif_center_notifs_bg_alt = theme.one_bg3
 -- ~~~~~~~~~~~~
 theme.awesome_dock_size = 80
 theme.awesome_dock_pinned = {
-    {"brave-browser"}, {"font-manager"}, {"telegram-desktop"},
+    {"microsoft-edge"}, {"font-manager"}, {"telegram-desktop"},
     {"simplescreenrecorder"}, {"bleachbit"}, {"libreoffice-writer"}, {"gimp"},
     {"inkscape"}, {apps.default.music_player}, {"alacritty"}
 }
