@@ -1,5 +1,5 @@
-<div align="center"> 
-     <h1>Awesome Dotfiles</h1> 
+<div align="center">
+     <h1>Awesome Dotfiles</h1>
  </div>
 
 <div align=center>
@@ -14,11 +14,11 @@
 </div>
 
 ## ✨ Contents
-- **[Info](#Info)**
-- **[Gallery](#gallery)**
-- **[Installation](#setup)**
 
-<a name="info"></a>
+- [Info](#information)
+- [Gallery](#gallery)
+- [Installation](#setup)
+
 ## 🔥 Information
 
 ![ss](./ss/ShoT_2023-09-03-04-28-34_1366x768.png)
@@ -37,7 +37,6 @@
 
 <br>
 
-<a name="gallery"></a>
 ## 🖼️ Gallery
 
 ![ss](./ss/ShoT_2023-09-03-04-28-55_1366x768.png)
@@ -52,7 +51,6 @@
 
 ![ss](./ss/ShoT_2023-09-03-04-30-59_1366x768.png)
 
-<a name="setup"></a>
 ## 💣 Setup Installation
 
 1.- <b>First clone the repository</b>
@@ -97,7 +95,7 @@ sudo chmod +x /usr/share/xsessions/awesome.desktop
 CMAKE_ARGS="-DLUA_EXECUTABLE=/usr/bin/lua5.3 -DLUA_LIBRARY=/usr/lib/x86_64-linux-gnu/liblua5.3.so -DLUA_INCLUDE_DIR=/usr/include/lua5.3" make
 ```
 
-5.- **Other dependecies only works for **Debian 12**, and based distro, for other distro you can search same packages**
+5.- **Other dependecies only works for**Debian 12**, and based distro, for other distro you can search same packages**
 
 ```sh
 alacritty brightnessctl dunst rofi jq policykit-1-gnome playerctl mpd ncmpcpp geany mpc picom xdotool feh ueberzug maim pamixer libwebp-dev xdg-user-dirs webp-pixbuf-loader zsh zsh-autosuggestions zsh-syntax-highlighting thunar thunar-volman thunar-archive-plugin gvfs gvfs-backends engrampa dmenu xdo redshift xautolock fzf ytfzf yt-dlp gawk tumbler gpick neofetch xdg-utils python-is-python3 python3-gi gir1.2-nm-1.0 duf libglib2.0-bin btop ncdu bat exa wmctrl acpid xclip scrot acpi playerctl redshift mpdris2 libplayerctl-dev gir1.2-playerctl-2.0 mpv lxapperience bc
