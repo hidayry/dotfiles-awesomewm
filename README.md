@@ -13,15 +13,15 @@
 
 </div>
 
-## ✨ Contents
+## ✨ Contents ##
 
-- [Info](#information)
+- [Information](#information)
 - [Gallery](#gallery)
-- [Installation](#setup)
+- [Setup](#setup)
 
 <a name="information"></a>
 
-## 🔥 Information
+## 🔥 Information ##
 
 ![ss](./ss/ShoT_2023-09-03-04-28-34_1366x768.png)
 
@@ -41,7 +41,7 @@
 
 <a name="gallery"></a>
 
-## 🖼️ Gallery
+## 🖼️ Gallery ##
 
 ![ss](./ss/ShoT_2023-09-03-04-28-55_1366x768.png)
 
@@ -57,7 +57,7 @@
 
 <a name="setup"></a>
 
-## 💣 Setup Installation
+## 💣 Setup Installation ##
 
 1.- <b>First clone the repository</b>
 
