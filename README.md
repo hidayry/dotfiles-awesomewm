@@ -1,3 +1,7 @@
+<div align="center"> 
+     <h1>Awesome Dotfiles</h1> 
+ </div>
+
 <div align=center>
 
 <a href="https://awesomewm.org/"><img alt="AwesomeWM Logo" height="150" src="https://upload.wikimedia.org/wikipedia/commons/0/07/Awesome_logo.svg"></a>
@@ -9,6 +13,12 @@
 
 </div>
 
+## ✨ Contents
+- **[Info](#Info)**
+- **[Gallery](#gallery)**
+- **[Installation](#setup)**
+
+<a name="info"></a>
 ## 🔥 Information
 
 ![ss](./ss/ShoT_2023-09-03-04-28-34_1366x768.png)
@@ -27,7 +37,8 @@
 
 <br>
 
-## 🖼️ Screenshoot
+<a name="gallery"></a>
+## 🖼️ Gallery
 
 ![ss](./ss/ShoT_2023-09-03-04-28-55_1366x768.png)
 
@@ -41,7 +52,8 @@
 
 ![ss](./ss/ShoT_2023-09-03-04-30-59_1366x768.png)
 
-## 🍀 Setup
+<a name="setup"></a>
+## 💣 Setup Installation
 
 1.- <b>First clone the repository</b>
 
