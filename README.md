@@ -19,6 +19,8 @@
 - [Gallery](#gallery)
 - [Installation](#setup)
 
+<a name="information"></a>
+
 ## 🔥 Information
 
 ![ss](./ss/ShoT_2023-09-03-04-28-34_1366x768.png)
@@ -37,6 +39,8 @@
 
 <br>
 
+<a name="gallery"></a>
+
 ## 🖼️ Gallery
 
 ![ss](./ss/ShoT_2023-09-03-04-28-55_1366x768.png)
@@ -50,6 +54,8 @@
 ![ss](./ss/ShoT_2023-09-03-04-30-36_1366x768.png)
 
 ![ss](./ss/ShoT_2023-09-03-04-30-59_1366x768.png)
+
+<a name="setup"></a>
 
 ## 💣 Setup Installation
 
