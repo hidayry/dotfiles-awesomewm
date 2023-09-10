@@ -84,7 +84,11 @@ sudo chmod +x /usr/share/xsessions/awesome.desktop
 **I`m use this for build:**
 
 ```sh
-CMAKE_ARGS="-DLUA_EXECUTABLE=/usr/bin/lua5.3 -DLUA_LIBRARY=/usr/lib/x86_64-linux-gnu/liblua5.3.so -DLUA_INCLUDE_DIR=/usr/include/lua5.3" make
+git clone https://github.com/awesomewm/awesome
+cd awesome
+CMAKE_ARGS="-DLUA_EXECUTABLE=/usr/bin/lua5.3 -DLUA_LIBRARY=/usr/lib/x86_64-linux-gnu/liblua5.3.so -DLUA_INCLUDE_DIR=/usr/include/lua5.3" make package
+cd build
+sudo apt install ./*.deb
 ```
 
 5.- **Other dependecies only works for**Debian 12**, and based distro, for other distro you can search same packages**
