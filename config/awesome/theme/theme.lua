@@ -157,27 +157,27 @@ theme.titlebar_maximized_button_focus_inactive_hover = icon_dir ..
 
 -- Sticky Button
 theme.titlebar_sticky_button_normal_inactive = icon_dir .. "normal.svg"
-theme.titlebar_sticky_button_focus_inactive = icon_dir .. "sticky.png"
+theme.titlebar_sticky_button_focus_inactive = icon_dir .. "sticky.svg"
 theme.titlebar_sticky_button_normal_active = icon_dir .. "normal.svg"
-theme.titlebar_sticky_button_focus_active = icon_dir .. "pin.png"
+theme.titlebar_sticky_button_focus_active = icon_dir .. "onsticky.svg"
 
 -- Ontop Button
 theme.titlebar_ontop_button_normal_inactive = icon_dir .. "normal.svg"
-theme.titlebar_ontop_button_focus_inactive = icon_dir .. "ontop.png"
+theme.titlebar_ontop_button_focus_inactive = icon_dir .. "ontop.svg"
 theme.titlebar_ontop_button_normal_active = icon_dir .. "normal.svg"
-theme.titlebar_ontop_button_focus_active = icon_dir .. "ontopup.png"
+theme.titlebar_ontop_button_focus_active = icon_dir .. "ontopup.svg"
 
 -- Hovered Ontop Button
-theme.titlebar_ontop_button_normal_inactive_hover = icon_dir .. "ontopup.png"
-theme.titlebar_ontop_button_focus_inactive_hover = icon_dir .. "ontopup.png"
-theme.titlebar_ontop_button_normal_active_hover = icon_dir .. "ontopup.png"
-theme.titlebar_ontop_button_focus_active_hover = icon_dir .. "ontopup.png"
+theme.titlebar_ontop_button_normal_inactive_hover = icon_dir .. "ontopup.svg"
+theme.titlebar_ontop_button_focus_inactive_hover = icon_dir .. "ontopup.svg"
+theme.titlebar_ontop_button_normal_active_hover = icon_dir .. "ontopup.svg"
+theme.titlebar_ontop_button_focus_active_hover = icon_dir .. "ontopup.svg"
 
 -- Hovered Sticky Button
-theme.titlebar_sticky_button_normal_inactive_hover = icon_dir .. "pin.png"
-theme.titlebar_sticky_button_focus_inactive_hover = icon_dir .. "pin.png"
-theme.titlebar_sticky_button_normal_active_hover = icon_dir .. "pin.png"
-theme.titlebar_sticky_button_focus_active_hover = icon_dir .. "pin.png"
+theme.titlebar_sticky_button_normal_inactive_hover = icon_dir .. "onsticky.svg"
+theme.titlebar_sticky_button_focus_inactive_hover = icon_dir .. "onsticky.svg"
+theme.titlebar_sticky_button_normal_active_hover = icon_dir .. "onsticky.svg"
+theme.titlebar_sticky_button_focus_active_hover = icon_dir .. "onsticky.svg"
 
 --- Wibar
 theme.wibar_bg = "#101213"

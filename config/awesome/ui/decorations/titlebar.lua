@@ -88,14 +88,14 @@ client.connect_signal("request::titlebars", function(c)
             -- Right
             {
                 helpers.ui.apply_margin(awful.titlebar.widget.stickybutton(c), {
-                    left = 5,
-                    right = 5,
+                    left = 7,
+                    right = 7,
                     top = 4,
                     bottom = 5,
                 }),
                 helpers.ui.apply_margin(awful.titlebar.widget.ontopbutton(c), {
-                    left = 5,
-                    right = 5,
+                    left = 7,
+                    right = 7,
                     top = 4,
                     bottom = 10
                 }),
