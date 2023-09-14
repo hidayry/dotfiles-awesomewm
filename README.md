@@ -114,7 +114,22 @@ Extract fonts.zip in ~/.local/share/fonts than run fc-cache -fv in terminal
 
 - [Rofi-Greenclip](https://github.com/erebe/greenclip)
 
+```sh
+wget https://github.com/erebe/greenclip/releases/download/v4.2/greenclip
+sudo mv greenclip /usr/bin/
+sudo chmod +x /usr/bin/greenclip
+```
+
 - [Networkmanager_dmenu](https://github.com/firecat53/networkmanager-dmenu)
+
+```sh
+git clone https://github.com/firecat53/networkmanager-dmenu.git
+cd networkmanager-dmenu
+chmod +x networkmanager_dmenu.desktop
+sudo mv networkmanager_dmenu.desktop /usr/share/applications/
+chmod +x networkmanager_dmenu
+sudo mv networkmanager_dmenu /usr/bin/
+```
 
 **Themes and icons :**
 
