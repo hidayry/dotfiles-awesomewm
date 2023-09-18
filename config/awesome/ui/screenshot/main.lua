@@ -331,7 +331,7 @@ end)
 timer_button:connect_signal("button::release", function(_, _, _, button)
   if button == 1 then
     ss_tool.visible = false
-    awful.spawn.easy_async_with_shell("sleep " .. delay_time .. " && scrot -u ~/Pictures/screenshot.png",
+    awful.spawn.easy_async_with_shell("sleep 0.3 && scrot -d " .. delay_time .. " ~/Pictures/screenshot.png",
       function()
         naughty.notify
         (
