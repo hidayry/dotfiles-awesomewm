@@ -98,7 +98,7 @@ return function(s)
         placement = function(w)
             awful.placement.top_right(w, {
                 honor_workarea = true,
-                margins = {top = beautiful.useless_gap * 2, right = dpi(10)}
+                margins = {top = beautiful.useless_gap * 2, right = dpi(5)}
             })
         end,
         widget = {
