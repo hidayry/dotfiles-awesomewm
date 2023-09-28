@@ -13,7 +13,7 @@ return {
         --- Default text editor
         text_editor = "st -e nvim",
         --- Default code editor
-        code_editor = "code",
+        code_editor = "codium",
         --- Default web browser
         web_browser = "microsoft-edge-stable",
         --- Default file manager
