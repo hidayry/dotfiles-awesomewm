@@ -15,7 +15,7 @@ return {
         --- Default code editor
         code_editor = "codium",
         --- Default web browser
-        web_browser = "microsoft-edge-stable",
+        web_browser = "firefox",
         --- Default file manager
         file_manager = "thunar",
         --- Default network manager
