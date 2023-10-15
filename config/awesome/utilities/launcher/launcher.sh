@@ -1,1 +1,3 @@
-rofi -show drun -theme /home/ryan/.config/awesome/utilities/launcher/style.rasi
+#!/bin/bash
+
+rofi -show drun -theme ~/.config/awesome/utilities/launcher/style.rasi
