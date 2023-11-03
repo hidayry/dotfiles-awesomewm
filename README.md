@@ -13,7 +13,7 @@
 
 </div>
 
-## 🔥 Information ##
+## 🔥 Information
 
 ![ss](./ss/ShoT_2023-09-03-04-28-34_1366x768.png)
 
@@ -29,7 +29,7 @@
 | Music/Player |                                      MPD-Ncmpcpp                                       |
 | File Manager |                                         Thunar                                         |
 
-## 🖼️ Gallery ##
+## 🖼️ Gallery
 
 ![ss](./ss/ShoT_2023-09-03-04-28-55_1366x768.png)
 
@@ -43,7 +43,7 @@
 
 ![ss](./ss/ShoT_2023-09-03-04-30-59_1366x768.png)
 
-## 💣 Setup Installation ##
+## 💣 Setup Installation
 
 1.- <b>First clone the repository</b>
 
@@ -94,10 +94,10 @@ sudo apt install ./*.deb
 5.- **Other dependecies only works for Debian 12/Ubuntu and based distro, for other distro you can search same packages**
 
 ```sh
-alacritty brightnessctl dunst rofi jq policykit-1-gnome playerctl mpd ncmpcpp mpc picom xdotool ueberzug libwebp-dev webp-pixbuf-loader zsh zsh-autosuggestions zsh-syntax-highlighting thunar thunar-volman thunar-archive-plugin gvfs gvfs-backends engrampa dmenu xdo redshift xautolock fzf ytfzf yt-dlp gawk tumbler gpick xdg-utils python-is-python3 python3-gi gir1.2-nm-1.0 duf libglib2.0-bin btop ncdu bat exa wmctrl acpid xclip scrot acpi mpdris2 libplayerctl-dev gir1.2-playerctl-2.0 lxappearance bc
+alacritty brightnessctl dunst rofi jq policykit-1-gnome playerctl mpd ncmpcpp mpc picom xdotool ueberzug libwebp-dev webp-pixbuf-loader zsh zsh-autosuggestions zsh-syntax-highlighting thunar thunar-volman thunar-archive-plugin gvfs gvfs-backends engrampa dmenu xdo redshift xautolock fzf ytfzf yt-dlp gawk tumbler gpick xdg-utils python-is-python3 python3-gi gir1.2-nm-1.0 duf libglib2.0-bin btop ncdu bat exa wmctrl acpid xclip scrot mpdris2 libplayerctl-dev gir1.2-playerctl-2.0 lxappearance bc
 ```
 
-***
+---
 
 - **For Neovim**
 
@@ -107,7 +107,13 @@ Because Neovim in Debian 12 to old, you can install neovim from folder app suppo
 
 Extract fonts.zip in ~/.local/share/fonts than run fc-cache -fv in terminal
 
-***
+```sh
+unzip fonts.zip -d ~/.local/share/fonts
+fc-cache -fv
+```
+
+---
+
 **For Debian/Ubuntu you can build for this :**
 
 - [I3lock-Color](https://github.com/Raymo111/i3lock-color)
@@ -138,12 +144,6 @@ sudo mv networkmanager_dmenu /usr/bin/
 - [TokyoNight](https://github.com/ljmill/tokyo-night-icons)
 
 - [Cutefish](https://github.com/cutefishos/icons) or you can take from folder app support and extract and move folder Crule to /usr/share/icons/
-
-**Run mpd**
-
-```sh
-systemctl --user enable mpd
-```
 
 <table align="center">
    <tr>
