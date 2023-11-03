@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Create the directory if it doesn't exist
-mkdir -p ~/Pictures/ss/
+mkdir -p ~/Pictures/
 
 # Function to display a notification
 function show_notification() {
@@ -11,29 +11,29 @@ function show_notification() {
 # Function to capture a fullscreen screenshot
 function capture_fullscreen() {
     timestamp=$(date +%Y%m%d_%H%M%S)
-    filename=~/Pictures/ss/screenshot_${timestamp}.png
+    filename=~/Pictures/screenshot_${timestamp}.png
 
-    scrot $filename
-    show_notification $filename
+    scrot "$filename"
+    show_notification "$filename"
 }
 
 # Function to capture a selected area screenshot
 function capture_selected_area() {
     timestamp=$(date +%Y%m%d_%H%M%S)
-    filename=~/Pictures/ss/screenshot_${timestamp}.png
+    filename=~/Pictures/screenshot_${timestamp}.png
 
-    scrot -s $filename
-    show_notification $filename
+    scrot -s "$filename"
+    show_notification "$filename"
 }
 
 # Function to capture a screenshot after a specified time delay
 function capture_with_timer() {
     delay=$1
     timestamp=$(date +%Y%m%d_%H%M%S)
-    filename=~/Pictures/ss/screenshot_${timestamp}.png
+    filename=~/Pictures/screenshot_${timestamp}.png
 
-    sleep $delay && scrot $filename
-    show_notification $filename
+    sleep $delay && scrot "$filename"
+    show_notification "$filename"
 }
 
 # Parse command line arguments
@@ -46,7 +46,7 @@ case $1 in
         ;;
     -t|--timer)
         delay=$2
-        capture_with_timer $delay
+        capture_with_timer "$delay"
         ;;
     *)
         echo "Usage: screenshoot.sh [-f|--fullscreen] [-s|--selected-area] [-t|--timer <seconds>]"

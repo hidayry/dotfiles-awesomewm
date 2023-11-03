@@ -312,7 +312,8 @@ open_pictures:connect_signal(
 fullscreen:connect_signal("button::release", function(_, _, _, button)
   if button == 1 then
     ss_tool.visible = false
-    awful.spawn.easy_async_with_shell("sleep 0.3 && scrot ~/Pictures/screenshot.png",
+    local screenshot_name = "screenshot_" .. os.date("%Y-%m-%d_%H-%M-%S") .. ".png"
+    awful.spawn.easy_async_with_shell("sleep 0.3 && scrot ~/Pictures/" .. screenshot_name,
       function()
         naughty.notify
         (
@@ -331,7 +332,8 @@ end)
 timer_button:connect_signal("button::release", function(_, _, _, button)
   if button == 1 then
     ss_tool.visible = false
-    awful.spawn.easy_async_with_shell("sleep 0.3 && scrot -d " .. delay_time .. " ~/Pictures/screenshot.png",
+    local screenshot_name = "screenshot_" .. os.date("%Y-%m-%d_%H-%M-%S") .. ".png"
+    awful.spawn.easy_async_with_shell("sleep 0.3 && scrot -d " .. delay_time .. " ~/Pictures/" .. screenshot_name,
       function()
         naughty.notify
         (
@@ -350,7 +352,8 @@ end)
 selection:connect_signal("button::release", function(_, _, _, button)
   if button == 1 then
     ss_tool.visible = false
-    awful.spawn.easy_async_with_shell("sleep 0.3 && scrot -s ~/Pictures/screenshot.png", function()
+    local screenshot_name = "screenshot_" .. os.date("%Y-%m-%d_%H-%M-%S") .. ".png"
+    awful.spawn.easy_async_with_shell("sleep 0.3 && scrot -s ~/Pictures/" .. screenshot_name, function()
         naughty.notify
         (
           {
